@@ -2,7 +2,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 25000,
+      delay: 7500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -41,3 +41,4 @@ function onLinkClick() {
   document.getElementsByTagName('section')[3].scrollIntoView();
   // will scroll to 4th h3 element
 }
+
