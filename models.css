@@ -13,16 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100%;
-    overflow-x: hidden; 
-    position: relative;
-    background-color: #181818;
-    background: #fff;   
-    font-size: 14px;
-    color: #000;       
-}
-
 .header__menu {
     position: fixed;
     z-index: 99;
@@ -50,8 +40,7 @@ body {
 }
 
 .navig__menu {
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     height: fit-content;
     justify-content: flex-start;
     overflow: hidden;    
@@ -102,7 +91,7 @@ input {
 input:focus {
     width: 300px;
     z-index: 1;
-    border-bottom: 2px solid #F9F0DA;
+    border-bottom: 2px solid #f9f0da;
     color: #fff;  
 }
 
@@ -128,7 +117,7 @@ input:focus {
     content: "";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #F9F0DA;
+    color: #f9f0da;
     opacity: 1;  
 }
 
@@ -158,7 +147,7 @@ input {
 input:focus {
     width: 300px;
     z-index: 1;
-    border-bottom: 2px solid #F9F0DA;
+    border-bottom: 2px solid #f9f0da;
     color: #fff;  
 }
 
@@ -184,7 +173,7 @@ input:focus {
     content: "";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #F9F0DA;
+    color: #f9f0da;
     opacity: 1;  
 }
 
@@ -361,8 +350,7 @@ input:focus {
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 110px;
-    text-transform: uppercase;
+    font-size: 110px;    
     text-transform: uppercase;    
     animation: slideUp 1s forwards;    
     transform: translateY(150%);        
@@ -421,7 +409,7 @@ input:focus {
     justify-content: space-between;    
 }
 
-.heading {
+.heading, .heading2 {
     margin-top: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -429,8 +417,6 @@ input:focus {
 }
 
 .heading2 {
-    margin-top: 25px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
@@ -459,14 +445,9 @@ input:focus {
     z-index: 20;      
 }
 
-.configurate2 {    
+.configurate2, .configurate3 {    
     position: relative;
     overflow: hidden;          
-}
-
-.configurate3 {    
-    position: relative;
-    overflow: hidden;      
 }
 
 .configurate2_1 {
@@ -679,4 +660,128 @@ input:focus {
 
 .linknet {
     color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+    .css-1akagq8 {
+        margin: 0 30px 0 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 1250px) {
+    .configurate2::before, .configurate3::before, .configurate3::after, .configurate3::after, .configurate5::after, .configurate5::before, .configurate6::before {
+        display: none;       
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tittle1_section4 {
+        margin-top: 80px;        
+        font-weight: 500;
+        font-size: 40px;        
+    }
+    .tittle2_section4 {                
+        font-weight: 600;
+        font-size: 80px;   
+    }  
+    .home {
+        text-align: center;        
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .position {        
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .configurate1_1 {
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .configurate6::before {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .css-1akagq8 {
+        margin: 0 10px 0 10px;
+        font-weight: 200;
+        font-size: 15px;
+    }
+    .navig__menu {
+        margin-top: 100px;
+    }
+    .tittle1_section4 {
+        margin-top: 40px;        
+        font-weight: 400;
+        font-size: 30px;        
+    }
+    .tittle2_section4 {                
+        font-weight: 500;
+        font-size: 50px;   
+    }  
+    .home {
+        text-align: center;        
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 10px;
+    } 
+    .cta-down {        
+        margin: 10px;        
+    }     
+    .configurate1 {
+        align-items: center;
+        margin: 0;               
+    }
+    .configurate1 img {
+        width: 290px; 
+        overflow: hidden;       
+    }
+    .heading {
+        width: 300px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .heading2 {
+        width: 320px;
+        font-weight: 400;
+        font-size: 20px;
+    }  
+    .tittle1_footer1 {
+        padding: 20px;
+        font-weight: 400;
+        font-size: 10px;
+    }   
+}
+
+@media screen and (max-width: 626px) {
+    .navig__menu {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        }
+    .navig__menu li {
+        margin-top: 5px;
+    }
+    .configurate4 {        
+        margin: 0;        
+    }
+    .tittle2_section4 {                
+        font-weight: 400;
+        font-size: 30px;   
+    }
+    .heading3 {
+        width: 300px;
+        font-weight: 500;
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 450px) {    
+    .configurate1 {       
+        align-items: flex-start;       
+    }    
 }
