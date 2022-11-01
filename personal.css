@@ -604,7 +604,11 @@ input:focus {
 @media screen and (max-width: 1250px) {
     .configurate2::before, .configurate3::before, .configurate3::after, .configurate3::after, .configurate5::after, .configurate5::before, .configurate6::before {
         display: none;       
-    }
+    } 
+    .section_9 iframe {
+        max-width: 750px;
+        max-height: 380px;
+    }    
 }
 
 @media screen and (max-width: 1000px) {
@@ -673,13 +677,13 @@ input:focus {
         font-size: 12px;
     }
     .heading2 {
-        width: 320px;
+        width: 300px;
         font-weight: 400;
         font-size: 20px;
     }  
     .section_9 iframe {
-        max-width: 310px;
-        max-height: 110px;
+        max-width: 290px;
+        max-height: 90px;
     }
     .tittle1_footer1 {
         padding: 20px;
@@ -714,5 +718,5 @@ input:focus {
 @media screen and (max-width: 450px) {    
     .configurate1 {       
         align-items: flex-start;       
-    }    
+    }       
 }
